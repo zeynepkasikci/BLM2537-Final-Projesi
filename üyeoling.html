@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class = "dark-mode">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width initial-scale =1.0"> <!--web sitesinin tablette veya telefonda güzel bir görünüme sahip olması için gereken kod-->
+    <link rel = "stylesheet" href="uyeol.css">
+    <title>Welcome!</title>
+
+
+</head>
+<body>
+    <header>
+        <div id = "logo">
+        <a href="asılsayfa.html">
+        <img src="yol arkadaşım.png"  width = 250 height = 60 align= "top" alt="Yol Arkadaşım"></a> </div>
+        
+    </header>
+    <form action=" ">
+
+        <h2>Welcome!</h2>
+        <input type ="text" name = "name" placeholder="Your name">
+        <input type ="text" name = "surname" placeholder="Your surname">
+        <input type ="text" name = "eposta" placeholder="Your e-mail">
+        <input type = "password" name = "sifre" placeholder="Your password">
+        <input type = "submit" value = "Sign Up">
+        <h5><a href = "girising.html">Already have an account? Sign in!</h5></a>
+    </form>
+    <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", (event) => {
+          const name = document.querySelector("input[name='name']").value;
+          const email = document.querySelector("input[name='eposta']").value;
+          const password = document.querySelector("input[name='sifre']").value;
+      
+          if (name === "" || email === "" || password === "") {
+            alert("Please fill everywhere.");
+            event.preventDefault(); // Prevent form submission
+          }
+          else {
+            alert ("Welcome!")
+          }
+        });
+      </script>
+   
+
+</body>
+</html>

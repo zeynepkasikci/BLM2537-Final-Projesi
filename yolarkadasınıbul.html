@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yolarkadasınıbul.css">
+    <title>&#9835; Yol Arkadaşım &#9835;</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="asılsayfa.html">
+                <img src="yol arkadaşım.png" width="250" height="60" align="top" alt="Yol Arkadaşım">
+            </a>
+        </div>
+    </header>
+
+    <section id="menuyeri">
+        <nav>
+            <a href="hakkımızda.html" target="_blank">Hakkımızda</a>
+            <a href="girişyap.html">Giriş Yap</a>
+            <a href="üyeol.html">Üye Ol</a>
+            <a href = "yolarkbuling.html">English</a>
+        </nav>
+        <div id="offline">
+            İnternet bağlantınızda bir problem var. Lütfen tekrar deneyin.
+        </div>
+    </section>
+
+    <section id="bul">
+        <h2>Yol Arkadaşını Bul</h2>
+        <form id="bulForm">
+            <label for="nereden">Nereden:</label>
+            <input type="text" id="nereden" name="nereden" required><br><br>
+
+            <label for="nereye">Nereye:</label>
+            <input type="text" id="nereye" name="nereye" required><br><br>
+
+            <label for="tarih">Tarih:</label>
+            <input type="date" id="tarih" name="tarih" required><br><br>
+
+            <button type="submit">Ara</button>
+            <button type="submit"><a href = "rotaolustur.html">Rota Oluştur</button></a>
+        </form>
+    </section>
+
+    <script>
+        const div = document.getElementById("offline");
+        window.addEventListener("online", () => {
+            div.style.display = "none";
+        });
+        window.addEventListener("offline", () => {
+            div.style.display = "block";
+        });
+
+        document.getElementById('bulForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nereden = document.getElementById('nereden').value;
+            const nereye = document.getElementById('nereye').value;
+            const tarih = document.getElementById('tarih').value;
+
+            // Yol arkadaşı bulma işlemi (burada yer alacak)
+            console.log("Yol Arkadaşınızı Bulmak İçin:");
+            console.log("Nereden: " + nereden);
+            console.log("Nereye: " + nereye);
+            console.log("Tarih: " + tarih);
+        });
+    </script>
+</body>
+</html>

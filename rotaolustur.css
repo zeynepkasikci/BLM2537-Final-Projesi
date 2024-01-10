@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+  margin: 10px auto;
+  margin-bottom: 10px;
+  background-image: url(bej.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  font-weight: bolder;
+}
+body::-webkit-scrollbar{
+  background: #eee;
+  width: 6px;
+  height:6px;
+  border-radius: 4px 4px 0 0;
+
+}
+body::-webkit-scrollbar-corner{
+  background: #eee;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #692020;
+  border-radius:6px;
+}
+
+#menuyeri {
+  height: 30px;
+  margin-top:70px;
+  padding: 20 0px;
+}
+#logo {
+    display:flex;
+    cursor:pointer;
+    margin-top: -60px;
+    width: 40px;
+    border-radius: 40px;
+    float: left;
+    transition-duration: 300ms;
+  
+}
+
+
+#logo:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+  filter: grayscale(100%); 
+  transition: filter 1s ease-in-out; 
+}
+#başlık{
+ 
+  margin-left:30px;
+  color: #5B0909;
+}
+nav {
+  margin-top:-65px;
+  float: right;
+  line-height: 80px;
+  text-align: center;
+}
+
+nav a { 
+  text-decoration: none;
+  color: #5B0909;
+  margin-right: 25px;
+  transition-duration: 1.5s;
+}
+nav a:hover{
+  color:#a32c62;
+}
+#offline{
+  background: rgba(139, 0, 0, 0.389);
+  color:#fff;
+  display:none;
+  padding: 12px;
+  font-size: 20px;
+}
+#istanbul{
+  width:250px;
+  height: 250px;
+  float:left;
+  padding: 10px;
+  margin-left: 30px;
+  background-image: url("dktt.jpg");
+  background-position: center;
+  background-size: 100%;
+  
+}
+
+#ankara{
+  width:250px;
+  height: 250px;
+  padding-right: 10px;
+  float:left;
+  margin-left: 50px;
+  background-image: url("jekylhyde.jpg");
+  background-position: center;
+  background-position-x: 35%;
+
+}
+#antalya{
+  width:250px;
+  height: 250px;
+  float:left;
+  padding-right: 10px;
+  margin-left: 50px;
+  background-image: url("redd.png");
+  background-position: 65%;
+  background-size: 150%;
+}
+#izmir{
+  width:250px;
+  height: 250px;
+  float:left;
+  padding-right: 10px;
+  margin-left: 50px;
+  background-image: url("bale.jpeg");
+  background-position: center;
+  background-size: 250%;
+  background-position-y: 100%;
+}
+#balıkesir{
+  width:250px;
+  height: 250px;
+  margin-left: 50px;
+  margin-right:10px;
+  float:left;
+  background-image: url("nazım.gif");
+  background-position-y: 50%;
+  background-size: 160%;
+}
+#kocaeli{
+  width:250px;
+  height: 250px;
+  float:left;
+  margin-top: 300px;
+  padding: 10px;
+  margin-left: -1460px;
+  background-image: url("manga.png");
+  background-position: center;
+  background-size: 100%;
+  
+}
+
+#muğla{
+  width:250px;
+  height: 250px;
+  padding-right: 10px;
+  float:left;
+  margin-top: 300px;
+  margin-left: -1160px;
+  background-image: url("sergen.webp");
+  background-position: center;
+  background-position-x: 100%;
+  background-size: 180%;
+  background-position-y: 20%;
+
+}
+#bursa{
+  width:250px;
+  height: 250px;
+  margin-top: 300px;
+  float:left;
+  padding-right: 10px;
+  margin-left: -857px;
+  background-image: url("tolgshow.png");
+  background-position: 65%;
+  background-size: 100%;
+}
+#adana{
+  width:250px;
+  height: 250px;
+  float:left;
+  padding-right: 10px;
+  margin-left: -560px;
+  background-image: url("canozan-1.jpg");
+  margin-top: 300px;
+  background-position: center;
+  background-size: 150%;
+  background-position-y: 100%;
+}
+#eskişehir{
+  width:250px;
+  height: 250px;
+  margin-left: 1240px;
+  margin-right:10px;
+  float:left;
+  margin-top: 50px;
+  background-image: url("3BKSA_darduyurugorseli.jpg");
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 190%;
+}
+
+#link1{
+  
+  float:left;
+  margin-top:-10px;
+  margin-left: -1378px;
+  
+}
+#link2{
+  float:left;
+  margin-top:-10px;
+  margin-left: -1084px;
+}
+#link3{
+  float:left; 
+  margin-top:-10px;
+  margin-left: -784px;
+
+}
+#link4{
+  float:left;
+  margin-top:-10px;
+  margin-left: -490px;
+}
+#link5{
+  float:left;
+
+  margin-top:-10px;
+  margin-left: -160px;
+}
+#link6{
+  float:left;
+  margin-top:290px;
+  margin-left: -1378px;
+}
+#link7{
+  float:left;
+  margin-top:290px;
+  margin-left: -1084px;
+  
+}
+#link8{
+  float:left;
+  margin-top:290px;
+  margin-left: -784px;
+  
+}
+#link9{
+  float:left;
+  margin-top:290px;
+  margin-left: -490px;
+}
+#link10{
+  float:left;
+  margin-top:290px;
+  
+  margin-left: -160px;
+}
+a{
+  text-decoration: none;
+  color:#5B0909;
+}
+a:hover{
+  transition-duration: 0.7s;
+  color:#5B0909;
+}
+#istanbul:hover{
+  transform: scale(1.1);
+}
+#ankara:hover{
+  transform: scale(1.1);
+}
+#muğla:hover{
+  transform: scale(1.1);
+}
+#izmir:hover{
+  transform: scale(1.1);
+}
+#kocaeli:hover{
+  transform: scale(1.1);
+}
+#bursa:hover{
+  transform: scale(1.1);
+}
+#eskişehir:hover{
+  transform: scale(1.1);
+}
+#antalya:hover{
+  transform: scale(1.1);
+}
+#balıkesir:hover{
+  transform: scale(1.1);
+}
+#adana:hover{
+  transform: scale(1.1);
+}
+
+#bul {
+
+  max-width: 400px;
+  margin: 50px auto;
+  margin-top: 650px;
+  background-color: #ffffff93;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#bul h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #6c1c1c;
+  color: #fff
+}
+
+a{
+text-decoration: none;
+color: #fff
+}
+#sonuc {
+margin-top: 20px;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+button a:hover{
+  color:white;
+}

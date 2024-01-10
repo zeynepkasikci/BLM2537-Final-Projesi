@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box ;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    margin: 10px;
+    background-image: url("arkaplan2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color:rgb(50, 6, 6)
+
+  }
+#menuyeri {
+    height: 80px;
+    padding: 0 0px;
+}
+#arama{
+    display:flex;
+    width: 40px;
+  }
+  
+.logo {
+    display:flex;
+    cursor:pointer;
+    margin-top: 5px;
+    width: 40px;
+    border-radius: 40px;
+    float: left;
+    
+
+}
+nav {
+    float: right;
+    text-align: center;
+    line-height: 80px;
+  }
+  
+nav a { 
+    text-decoration: none;
+    color: #5B0909;
+    transition-duration: 1.5s;
+    margin-right: 25px;
+    transition-timing-function:linear;
+  }
+
+nav a:hover{
+    color:#f90000;
+}
+
+.yazi{
+    background-color:  #b99e8dc1;
+    margin: 80px auto;
+    text-align: center;
+    width: 800px;
+    height: 300px;
+}
+
+.yazi:hover{
+  -moz-background-inline-policy: unset;
+  border-radius: 10%;
+  background-color: #ab8e7c;
+  
+  transition-duration: 1.3s;
+}

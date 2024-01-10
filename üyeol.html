@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class = "dark-mode">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width initial-scale =1.0"> <!--web sitesinin tablette veya telefonda güzel bir görünüme sahip olması için gereken kod-->
+    <link rel = "stylesheet" href="uyeol.css">
+    <title>Hoş Geldiniz!</title>
+
+</head>
+<body>
+  <header>
+    <div id = "logo">
+    <a href="asılsayfa.html">
+    <img src="yol arkadaşım.png"  width = 250 height = 60 align= "top" alt="Yol Arkadaşım"></a> </div>
+    
+</header>
+    <form action=" ">
+        <h2>Hoş Geldiniz!</h2>
+        <input type ="text" name = "name" placeholder="Adınız Soyadınız">
+        <input type ="text" name = "eposta" placeholder="E-Mailiniz">
+        <input type = "password" name = "sifre" placeholder="Şifreniz">
+        
+        <input type = "submit" value = "Üye Ol">
+        <h5><a href = "girişyap.html">Hesabınız var mı? Hemen giriş yapın!</h5></a>
+    </form>
+
+    <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", (event) => {
+          const name = document.querySelector("input[name='name']").value;
+          const email = document.querySelector("input[name='eposta']").value;
+          const password = document.querySelector("input[name='sifre']").value;
+      
+          if (name === "" || email === "" || password === "") {
+            alert("Lütfen tüm alanları doldurunuz.");
+            event.preventDefault(); // Prevent form submission
+          }
+          else {
+            alert ("Hoş Geldiniz!")
+          }
+        });
+      </script>
+   
+</body>
+</html>

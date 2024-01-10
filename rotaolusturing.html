@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width initial-scale =1.0"> <!--web sitesinin tablette veya telefonda güzel bir görünüme sahip olması için gereken kod-->
+    <link rel = "stylesheet" href="rotaolustur.css">
+    <title>&#9835; Yol Arkadaşım &#9835;</title>
+</head>
+<body>
+    <header>
+        <div id = "logo">
+        <a href="asılsayfa.html">
+        <img src="yol arkadaşım.png"  width = 250 height = 60 align= "top" alt="Yol Arkadaşım"></a> </div>
+        
+    </header>
+    
+    <section id = "menuyeri">
+        <nav>
+        <a href = "aboutus.html" target="_blank">About Us</a>
+        <a href = "girising.html">Sign In</a>
+        <a href = "üyeoling.html">Sign Up</a>
+        <a href = "rotaolustur.html">Türkçe</a>
+    </nav>
+    <div id = "offline">
+        There is a problem in your internet connection. Please try again.
+    </div>
+    
+    </section>
+    <div id = "başlık"><h2> Incoming Activities</h2></div>
+      <div id = "istanbul"></div>
+    
+      <div id = "ankara"></div>
+      
+      <div id = "antalya"></div>
+
+      <div id = "balıkesir"></div>
+      <div id = "izmir"></div>
+      <div id = "kocaeli"></div>
+      <div id = "muğla"></div>
+      <div id = "bursa"></div>
+      <div id = "adana"></div>
+      <div id = "eskişehir"></div>
+        <div id = "link1">
+      <h3><a href = "https://www.biletix.com/etkinlik/3L672/TURKIYE/tr" target="_blank">İstanbul</a></h3></div>
+      <div id = "link2">
+      <h3><a href = "https://www.biletix.com/etkinlik/2CSZT/TURKIYE/tr" target="_blank">Ankara</a></h3></div>
+      <div id = "link3">
+      <h3><a href = "https://www.biletix.com/etkinlik/3AE04/TURKIYE/tr" target="_blank">Antalya</a></h3></div>
+      <div id = "link4">
+        <h3><a href = "https://www.biletix.com/etkinlik/2ZY33/TURKIYE/tr" target="_blank">Balıkesir</a></h3></div>
+      <div id = "link5">
+        <h3><a href = "https://www.biletix.com/etkinlik/3PN02/TURKIYE/tr" target="_blank">İzmir</a></h3></div>
+      <div id = "link6">
+        <h3><a href = "https://www.biletix.com/etkinlik/3IH02/TURKIYE/tr" target="_blank">Kocaeli</a></h3></div>
+      <div id = "link7">
+        <h3><a href = "https://www.biletix.com/etkinlik/3T671/TURKIYE/tr" target="_blank">Muğla</a></h3></div>
+      <div id = "link8">
+        <h3><a href = "https://www.biletix.com/etkinlik/30C03/TURKIYE/tr" target="_blank">Bursa</a></h3></div>
+      <div id = "link9">
+      <h3><a href = "https://www.biletix.com/etkinlik/3JD13/TURKIYE/tr" target="_blank">Adana</a></h3></div>
+      <div id = "link10">
+      <h3><a href = "https://www.biletix.com/etkinlik/3BKSB/TURKIYE/tr" target="_blank">Eskişehir</a></h3></div>
+
+      <section id="bul">
+        <form id="bulForm">
+            <label for="nereden">From where:</label>
+            <input type="text" id="nereden" name="nereden" required><br><br>
+
+            <label for="nereye">To where:</label>
+            <input type="text" id="nereye" name="nereye" required><br><br>
+
+            <label for="tarih">Date:</label>
+            <input type="date" id="tarih" name="tarih" required><br><br>
+
+            <button type="submit">Create your path</button>
+            <button type="submit"><a href = "yolarkadasınıbul.html">Find your fellow-traveller</button></a>
+        </form>
+    </section>
+
+    <script>
+        const div = document.getElementById("offline");
+        window.addEventListener("online", () => {
+            div.style.display = "none";
+        });
+        window.addEventListener("offline", () => {
+            div.style.display = "block";
+        });
+
+        document.getElementById('bulForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nereden = document.getElementById('nereden').value;
+            const nereye = document.getElementById('nereye').value;
+            const tarih = document.getElementById('tarih').value;
+
+            
+            console.log("Yol Arkadaşınızı Bulmak İçin:");
+            console.log("Nereden: " + nereden);
+            console.log("Nereye: " + nereye);
+            console.log("Tarih: " + tarih);
+        });
+    </script>
+</body>
+</html>
